@@ -295,3 +295,19 @@ function likePost(button){
 
   if(button.classList.contains("active")){
     button
+.classList.remove("active");
+count.textContent = Number(count.textContent) - 1;
+}else{
+button.classList.add("active");
+count.textContent = Number(count.textContent) + 1;
+}
+}
+
+function createPost(){
+document.getElementById("createBox").style.display="block";
+}
+
+function closeCreate(){
+document.getElementById("createBox").style.display="none";
+}
+</script>
